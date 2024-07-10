@@ -35,11 +35,19 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 case '/':
                     firstNumber = parseInt(buffer);
                     op = this.innerText;
-                    buffer = '';
+                    buffer = '0';
                     break;
-                
+                case 'C':
+                    buffer = '0';
+                    op = '';
+                    firstNumber = 0;
+                    secondNumber = 0;
+                    break;
                 default:
-                    buffer += this.innerText;
+                    if(buffer !== '0')
+                        buffer += this.innerText;
+                    else
+                        buffer = this.innerText;
                     break;
             }
             bufferDisplay.innerText = buffer;
