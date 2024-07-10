@@ -1,0 +1,21 @@
+.calc-body{
+    display: flex;
+    justify-content: center;
+    background-color: #d7d1d1;
+    border-radius: 20px;
+}
+.calc-display{
+    display: flex;
+    background-color: #f0eeee;
+    border-radius: 20px;
+    margin: 4px 4px;
+    padding: 10px;
+}
+.calc-display-text{
+    font-size: 40px;
+}
+
+.btn-row{
+    display: flex;
+    
+}
