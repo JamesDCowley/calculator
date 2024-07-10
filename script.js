@@ -43,6 +43,9 @@ document.addEventListener('DOMContentLoaded', (event) => {
                     firstNumber = 0;
                     secondNumber = 0;
                     break;
+                case '(-)':
+                    buffer = (parseInt(buffer) * -1).toString();
+                    break;
                 default:
                     if(buffer !== '0')
                         buffer += this.innerText;
