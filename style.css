@@ -1,21 +1,32 @@
 .calc-body{
+    margin: 80px 80px 80px;
     display: flex;
     justify-content: center;
-    background-color: #d7d1d1;
+    flex-direction: column;
+    background-color: #244c97a0;
     border-radius: 20px;
 }
 .calc-display{
-    display: flex;
-    background-color: #f0eeee;
+    background-color: #e3dcdc;
     border-radius: 20px;
     margin: 4px 4px;
     padding: 10px;
 }
 .calc-display-text{
+    text-align: right;
     font-size: 40px;
 }
 
 .btn-row{
     display: flex;
-    
+    justify-content: space-around;
+    padding: 15px 32px;
+}
+
+.calc-btn{
+    border: none;
+    font-size: 40px;
+    padding: 15px 32px;
+    border-radius: 15px;
+    text-align: center;
 }
