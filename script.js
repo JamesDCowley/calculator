@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
             console.log(this.innerText);
             switch(this.innerText){
                 case '=':
-                    secondNumber = parseInt(buffer);
+                    secondNumber = parseFloat(buffer);
                     switch(op){
                         case '+':
                             buffer = firstNumber + secondNumber;
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
                 case '-':
                 case '*':
                 case '/':
-                    firstNumber = parseInt(buffer);
+                    firstNumber = parseFloat(buffer);
                     op = this.innerText;
                     buffer = '0';
                     break;
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
                     secondNumber = 0;
                     break;
                 case '(-)':
-                    buffer = (parseInt(buffer) * -1).toString();
+                    buffer = (parseFloat(buffer) * -1).toString();
                     break;
                 default:
                     if(buffer !== '0')
